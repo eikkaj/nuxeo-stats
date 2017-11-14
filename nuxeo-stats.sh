@@ -33,7 +33,7 @@ jcmd Bootstrap Thread.print > ~/tmp/stats-tmp/thread-dmp-3.log
 #sudo gdb --pid=<PID> --batch -ex generate-core-file -ex detach >> tmp/nuxeo-stats.log
 
 # JVM Flight Recording
-jcmd Bootstrap JFR.start duration=60s filename=~/tmp/stats-tmp/flight-recording.log 
+jcmd Bootstrap JFR.start duration=60s filename=~/tmp/stats-tmp/flight-recording.jfr 
 
 # ES
 curl "localhost:9200" > ~/tmp/stats-tmp/nuxeo-stats-ES.log
