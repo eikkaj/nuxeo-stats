@@ -1,9 +1,12 @@
 Quick Shell Script for producing important Nuxeo Metrics
 
-*Requirements*
-$NUXEO_HOME should be set
-Script should be placed inside of $NUXEO_HOME
-Assumes ES Port is 9200
-Assumes JMX Port is 1089
-Requires redis-cli to be installed
-Requires stats-tmp directory inside of tmp
+#################################################
+#
+# Requires $NUXEO_HOME to be set
+# Assumes ES is @ 9200
+# Assumes JMX is @ 1089
+# Requires redis-cli to be installed
+# Requires stats-tmp dir inside of ~/tmp
+#
+#################################################
+
