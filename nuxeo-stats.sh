@@ -58,6 +58,4 @@ redis-cli | INFO > ~/tmp/stats-tmp/redis.log
 # Server Log
 cp /var/log/nuxeo/server.log ~/tmp/stats-tmp/server.log
 
-cd ~/tmp/stats-tmp
-
-zip -r metrics-results.zip ./*
+cd ~/tmp/stats-tmp && zip -r metrics-results.zip ./*
