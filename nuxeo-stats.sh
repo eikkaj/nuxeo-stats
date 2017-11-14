@@ -50,13 +50,13 @@ echo -e "domain metrics\nbeans" | java -jar ~/tmp/stats-tmp/jmxterm-1.0-alpha-4-
 (date +'%Y-%m-%d %H:%M:%S:%3N'; java -jar ~/tmp/stats-tmp/jmxterm-1.0-alpha-4-uber.jar -l localhost:1089 -n -i ~/tmp/stats-tmp/metrics-script.txt)  > ~/tmp/stats-tmp/metrics.txt 2>&1
 
 # Garbage Collection in gc.log
-cp $NUXEO_HOME/log/gc.log ~/tmp/stats-tmp/gc.log
+cp /var/log/nuxeo/gc.log ~/tmp/stats-tmp/gc.log
 
 # Redis CLI
 redis-cli | INFO > ~/tmp/stats-tmp/redis.log
 
 # Server Log
-cp $NUXEO_HOME/log/server.log ~/tmp/stats-tmp/server.log
+cp /var/log/nuxeo/server.log ~/tmp/stats-tmp/server.log
 
 cd ~/tmp/stats-tmp
 
